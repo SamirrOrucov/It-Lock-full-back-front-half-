@@ -1,0 +1,50 @@
+.wishlist{
+    max-width: 100vw;
+    &_container{
+        max-width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto;
+       
+        &_cards{
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            &_card{
+                width: 410px;
+                height: 380px;
+                .image{
+                    width: 100%;
+                    height: 70%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                .title{
+                    color: #003072;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+                .bottom{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 10px;
+                    i{
+                        font-size: 20px;
+                        color: #003072;
+                        cursor: pointer;
+                        transition: 300ms;
+                        &:hover {
+                            color: rgb(85, 150, 241)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.red{
+    color: red;
+}

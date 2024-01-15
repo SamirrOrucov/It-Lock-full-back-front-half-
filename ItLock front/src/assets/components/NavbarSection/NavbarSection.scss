@@ -1,0 +1,80 @@
+.navbar {
+  max-width: 100vw;
+  &_container {
+    max-width: 90%;
+    margin: 0 auto;
+
+    &_top {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      align-items: center;
+      border-bottom: 0.5px solid lightgray;
+      &_left {
+        color: #4c526e;
+        span {
+          color: #003072;
+        }
+      }
+      &_right {
+        display: flex;
+        gap: 15px;
+        font-size: 20px;
+        color: #003072;
+        i {
+          cursor: pointer;
+          transition: 300ms;
+          transition: transform 0.8s;
+          transform-style: preserve-3d;
+          &:hover {
+            transform: rotateY(180deg);
+          }
+        }
+      }
+    }
+    &_bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      &_left {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        &_lists {
+          display: flex;
+          gap: 10px;
+          color: #003072;
+          font-size: 18px;
+          a {
+            cursor: pointer;
+            transition: 300ms;
+            &:hover {
+              color: #3181f1;
+            }
+          }
+          .active {
+            color: black;
+            font-weight: bold;
+          }
+        }
+      }
+      &_right {
+        display: flex;
+        button {
+          width: 150px;
+          height: 50px;
+          border: 2px solid #003072;
+          color: #003072;
+        }
+        &_callCenter {
+          display: flex;
+          align-items: center
+           i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
